@@ -1,0 +1,1714 @@
+[ 2018-03-16T03:09:01+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004865s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001718s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0049s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1521140941 AND ( deadline = 0 OR deadline > 1521140941 ) ORDER BY `id` DESC  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000353s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000530s ]
+INFO: [ Silder ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0040s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'Silder' AND `status` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `hr_silder` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `hr_silder` WHERE `status` = 1 ORDER BY priorityr asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0037s ]
+SQL: SELECT `path` FROM `hr_picture` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.032000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000890s ]
+INFO: Run Addons\Silder\SilderAddon [ RunTime:0.031956s ]
+INFO: [ Silder ] --END-- [ RunTime:0.032069s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 39 AND `create_time` < 1521140941 AND ( deadline = 0 OR deadline > 1521140941 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 144 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 145 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 146 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 147 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 148 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 150 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 151 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1521140941 AND ( deadline = 0 OR deadline > 1521140941 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 138 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 139 LIMIT 1   [ RunTime:0.0028s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 140 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 141 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 142 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 43 AND `create_time` < 1521140941 AND ( deadline = 0 OR deadline > 1521140941 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 123 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SHOW COLUMNS FROM `hr_url` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `hr_url` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 122 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 121 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 120 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 118 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 119 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 117 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 116 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.065114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002117s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002280s ]
+
+[ 2018-03-16T03:39:08+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004516s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0041s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0057s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1521142748 AND ( deadline = 0 OR deadline > 1521142748 ) ORDER BY `id` DESC  [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000359s ]
+INFO: [ Silder ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0056s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'Silder' AND `status` = 1 LIMIT 1   [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `hr_silder` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `hr_silder` WHERE `status` = 1 ORDER BY priorityr asc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0041s ]
+SQL: SELECT `path` FROM `hr_picture` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000259s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.037550s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006971s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001094s ]
+INFO: Run Addons\Silder\SilderAddon [ RunTime:0.039029s ]
+INFO: [ Silder ] --END-- [ RunTime:0.039163s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 39 AND `create_time` < 1521142748 AND ( deadline = 0 OR deadline > 1521142748 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 144 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 145 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 146 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 147 LIMIT 1   [ RunTime:0.0022s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 148 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 149 LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 150 LIMIT 1   [ RunTime:0.0036s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 151 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1521142748 AND ( deadline = 0 OR deadline > 1521142748 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 138 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 139 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 140 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 141 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 142 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 43 AND `create_time` < 1521142748 AND ( deadline = 0 OR deadline > 1521142748 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 123 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SHOW COLUMNS FROM `hr_url` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `hr_url` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 122 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 121 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 120 LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 118 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 119 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 117 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 116 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.069612s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002375s ]
+
+[ 2018-03-16T03:52:09+08:00 ] 220.181.132.200 /index.php?s=/Home/Article/detail/id/84.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004194s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001729s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0045s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `id` = 84 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hr_document_speakers` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`honor`,`content`,`title_en`,`content_en`,`honor_en` FROM `hr_document_speakers` WHERE `id` = 84 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `hr_document` SET `view`=view+1 WHERE `id` = 84 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 125 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001261s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001356s ]
+
+[ 2018-03-16T03:59:43+08:00 ] 220.181.132.196 /index.php?s=/Home/Article/detail/id/78.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005907s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001449s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0048s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0056s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `id` = 78 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hr_document_speakers` [ RunTime:0.0059s ]
+SQL: SELECT `id`,`honor`,`content`,`title_en`,`content_en`,`honor_en` FROM `hr_document_speakers` WHERE `id` = 78 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0058s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `hr_document` SET `view`=view+1 WHERE `id` = 78 [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 134 LIMIT 1   [ RunTime:0.0012s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062209s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001926s ]
+
+[ 2018-03-16T08:05:42+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004636s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005909s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001194s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0042s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0044s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1521158742 AND ( deadline = 0 OR deadline > 1521158742 ) ORDER BY `id` DESC  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000311s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000430s ]
+INFO: [ Silder ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0054s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'Silder' AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hr_silder` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `hr_silder` WHERE `status` = 1 ORDER BY priorityr asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0042s ]
+SQL: SELECT `path` FROM `hr_picture` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.034187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005728s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000762s ]
+INFO: Run Addons\Silder\SilderAddon [ RunTime:0.031467s ]
+INFO: [ Silder ] --END-- [ RunTime:0.031598s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 39 AND `create_time` < 1521158742 AND ( deadline = 0 OR deadline > 1521158742 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 144 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 145 LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 146 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 148 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 150 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 151 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1521158742 AND ( deadline = 0 OR deadline > 1521158742 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 138 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 139 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 140 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 141 LIMIT 1   [ RunTime:0.0022s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 142 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 43 AND `create_time` < 1521158742 AND ( deadline = 0 OR deadline > 1521158742 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 123 LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SHOW COLUMNS FROM `hr_url` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hr_url` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 122 LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 121 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 120 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 118 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 119 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 117 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 116 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.063032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001768s ]
+
+[ 2018-03-16T11:35:26+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003995s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004971s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0174s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0085s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0099s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1521171326 AND ( deadline = 0 OR deadline > 1521171326 ) ORDER BY `id` DESC  [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000275s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000398s ]
+INFO: [ Silder ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0048s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'Silder' AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hr_silder` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `hr_silder` WHERE `status` = 1 ORDER BY priorityr asc  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0049s ]
+SQL: SELECT `path` FROM `hr_picture` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.042531s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001002s ]
+INFO: Run Addons\Silder\SilderAddon [ RunTime:0.041167s ]
+INFO: [ Silder ] --END-- [ RunTime:0.041372s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 39 AND `create_time` < 1521171326 AND ( deadline = 0 OR deadline > 1521171326 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 144 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 145 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 146 LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 147 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 148 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 149 LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 150 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 151 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1521171326 AND ( deadline = 0 OR deadline > 1521171326 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 138 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 139 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 140 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 141 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 142 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 43 AND `create_time` < 1521171326 AND ( deadline = 0 OR deadline > 1521171326 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 123 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SHOW COLUMNS FROM `hr_url` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `hr_url` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 122 LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 121 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 120 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 118 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 119 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 117 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 116 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.070903s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002041s ]
+
+[ 2018-03-16T11:35:35+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001319s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001775s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0032s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1521171335 AND ( deadline = 0 OR deadline > 1521171335 ) ORDER BY `id` DESC  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000255s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: [ Silder ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0035s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'Silder' AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hr_silder` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hr_silder` WHERE `status` = 1 ORDER BY priorityr asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0027s ]
+SQL: SELECT `path` FROM `hr_picture` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.027754s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000536s ]
+INFO: Run Addons\Silder\SilderAddon [ RunTime:0.027085s ]
+INFO: [ Silder ] --END-- [ RunTime:0.027212s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 39 AND `create_time` < 1521171335 AND ( deadline = 0 OR deadline > 1521171335 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 144 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 145 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 146 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 148 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 149 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 150 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 151 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0011s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1521171335 AND ( deadline = 0 OR deadline > 1521171335 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 138 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 139 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 140 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 141 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 142 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 43 AND `create_time` < 1521171335 AND ( deadline = 0 OR deadline > 1521171335 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 123 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SHOW COLUMNS FROM `hr_url` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `hr_url` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 122 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 121 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 120 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 118 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 119 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 117 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 116 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060139s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.051344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001171s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001286s ]
+
+[ 2018-03-16T12:41:14+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004600s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0037s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0053s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1521175274 AND ( deadline = 0 OR deadline > 1521175274 ) ORDER BY `id` DESC  [ RunTime:0.0036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000242s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ Silder ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0058s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'Silder' AND `status` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_silder` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `hr_silder` WHERE `status` = 1 ORDER BY priorityr asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0042s ]
+SQL: SELECT `path` FROM `hr_picture` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.044800s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006238s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001144s ]
+INFO: Run Addons\Silder\SilderAddon [ RunTime:0.043086s ]
+INFO: [ Silder ] --END-- [ RunTime:0.043210s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0009s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 39 AND `create_time` < 1521175274 AND ( deadline = 0 OR deadline > 1521175274 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 144 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 145 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 146 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 147 LIMIT 1   [ RunTime:0.0019s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 148 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 150 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 151 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1521175274 AND ( deadline = 0 OR deadline > 1521175274 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,5   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 138 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 139 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 140 LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 141 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 142 LIMIT 1   [ RunTime:0.0081s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 43 AND `create_time` < 1521175274 AND ( deadline = 0 OR deadline > 1521175274 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 123 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SHOW COLUMNS FROM `hr_url` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `hr_url` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 122 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 121 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 120 LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 118 LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 119 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 117 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 116 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114840s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.107351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002284s ]
+
+[ 2018-03-16T14:12:20+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003778s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004777s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001151s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1521180740 AND ( deadline = 0 OR deadline > 1521180740 ) ORDER BY `id` DESC  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000277s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ Silder ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0055s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'Silder' AND `status` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `hr_silder` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `hr_silder` WHERE `status` = 1 ORDER BY priorityr asc  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0060s ]
+SQL: SELECT `path` FROM `hr_picture` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.049791s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000936s ]
+INFO: Run Addons\Silder\SilderAddon [ RunTime:0.047637s ]
+INFO: [ Silder ] --END-- [ RunTime:0.047822s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 39 AND `create_time` < 1521180740 AND ( deadline = 0 OR deadline > 1521180740 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 144 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 145 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 146 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 148 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 150 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 151 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1521180740 AND ( deadline = 0 OR deadline > 1521180740 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,5   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 138 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 139 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 140 LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 141 LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 142 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 43 AND `create_time` < 1521180740 AND ( deadline = 0 OR deadline > 1521180740 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 123 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SHOW COLUMNS FROM `hr_url` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `hr_url` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 122 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 121 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 120 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 118 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 119 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 117 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 116 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.066596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002119s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002256s ]
+
+[ 2018-03-16T16:55:18+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003887s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001532s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1521190518 AND ( deadline = 0 OR deadline > 1521190518 ) ORDER BY `id` DESC  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000357s ]
+INFO: [ Silder ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0045s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'Silder' AND `status` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `hr_silder` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `hr_silder` WHERE `status` = 1 ORDER BY priorityr asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0031s ]
+SQL: SELECT `path` FROM `hr_picture` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.027081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000917s ]
+INFO: Run Addons\Silder\SilderAddon [ RunTime:0.027947s ]
+INFO: [ Silder ] --END-- [ RunTime:0.028043s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 39 AND `create_time` < 1521190518 AND ( deadline = 0 OR deadline > 1521190518 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 144 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 145 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 146 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 148 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 150 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 151 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1521190518 AND ( deadline = 0 OR deadline > 1521190518 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 138 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 139 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 140 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 141 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 142 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 43 AND `create_time` < 1521190518 AND ( deadline = 0 OR deadline > 1521190518 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 123 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SHOW COLUMNS FROM `hr_url` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `hr_url` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 122 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 121 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 120 LIMIT 1   [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 118 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 119 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 117 LIMIT 1   [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 116 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.060896s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001839s ]
+
+[ 2018-03-16T17:41:02+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002786s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0043s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1521193262 AND ( deadline = 0 OR deadline > 1521193262 ) ORDER BY `id` DESC  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000263s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ Silder ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0035s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'Silder' AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hr_silder` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `hr_silder` WHERE `status` = 1 ORDER BY priorityr asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0031s ]
+SQL: SELECT `path` FROM `hr_picture` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.026352s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000647s ]
+INFO: Run Addons\Silder\SilderAddon [ RunTime:0.027243s ]
+INFO: [ Silder ] --END-- [ RunTime:0.027348s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 39 AND `create_time` < 1521193262 AND ( deadline = 0 OR deadline > 1521193262 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 144 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 145 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 146 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 147 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 148 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 150 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 151 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1521193262 AND ( deadline = 0 OR deadline > 1521193262 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 138 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 139 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 140 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 141 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 142 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 43 AND `create_time` < 1521193262 AND ( deadline = 0 OR deadline > 1521193262 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 123 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SHOW COLUMNS FROM `hr_url` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hr_url` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 122 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 121 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 120 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 118 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 119 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 117 LIMIT 1   [ RunTime:0.0042s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 116 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.061278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001126s ]
+
+[ 2018-03-16T17:41:07+08:00 ] 61.140.25.56 /index.php?s=/Home/Article/detail/id/101.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002391s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002947s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0517s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0072s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `id` = 101 LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `hr_document_speakers` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`honor`,`content`,`title_en`,`content_en`,`honor_en` FROM `hr_document_speakers` WHERE `id` = 101 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0071s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `hr_document` SET `view`=view+1 WHERE `id` = 101 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 148 LIMIT 1   [ RunTime:0.0008s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001010s ]
+
+[ 2018-03-16T17:41:14+08:00 ] 61.140.25.56 /index.php?s=/Home/Article/detail/id/100.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002683s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0044s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `id` = 100 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hr_document_speakers` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`honor`,`content`,`title_en`,`content_en`,`honor_en` FROM `hr_document_speakers` WHERE `id` = 100 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0042s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `hr_document` SET `view`=view+1 WHERE `id` = 100 [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000243s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 146 LIMIT 1   [ RunTime:0.0009s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000975s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2018-03-16T17:41:23+08:00 ] 61.140.25.56 /index.php?s=/Home/Article/detail/id/102.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002565s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0037s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `id` = 102 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hr_document_speakers` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`honor`,`content`,`title_en`,`content_en`,`honor_en` FROM `hr_document_speakers` WHERE `id` = 102 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `hr_document` SET `view`=view+1 WHERE `id` = 102 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 150 LIMIT 1   [ RunTime:0.0008s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2018-03-16T17:41:31+08:00 ] 61.140.25.56 /index.php?s=/Home/Article/detail/id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003539s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0035s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hr_document_article` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark`,`thumb` FROM `hr_document_article` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: content_en D:\wwwroot\heavyrain\wwwroot\Application\Home\Controller\ArticleController.class.php 第 81 行.
+SQL: UPDATE `hr_document` SET `view`=view+1 WHERE `id` = 41 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 140 LIMIT 1   [ RunTime:0.0023s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000615s ]
+
+[ 2018-03-16T18:00:30+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.011009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.036269s ]
+INFO: [ app_init ] --END-- [ RunTime:0.048744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001506s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0064s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0064s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1521194430 AND ( deadline = 0 OR deadline > 1521194430 ) ORDER BY `id` DESC  [ RunTime:0.0095s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000374s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ Silder ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0051s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'Silder' AND `status` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hr_silder` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `hr_silder` WHERE `status` = 1 ORDER BY priorityr asc  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0052s ]
+SQL: SELECT `path` FROM `hr_picture` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.038170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001175s ]
+INFO: Run Addons\Silder\SilderAddon [ RunTime:0.040099s ]
+INFO: [ Silder ] --END-- [ RunTime:0.040262s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0009s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 39 AND `create_time` < 1521194430 AND ( deadline = 0 OR deadline > 1521194430 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 144 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 145 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 146 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 147 LIMIT 1   [ RunTime:0.0024s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 148 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 149 LIMIT 1   [ RunTime:0.0055s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 150 LIMIT 1   [ RunTime:0.0049s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 151 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1521194430 AND ( deadline = 0 OR deadline > 1521194430 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,5   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 138 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 139 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 140 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 141 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 142 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 43 AND `create_time` < 1521194430 AND ( deadline = 0 OR deadline > 1521194430 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0139s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 123 LIMIT 1   [ RunTime:0.0031s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SHOW COLUMNS FROM `hr_url` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `hr_url` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 122 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 121 LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 120 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 118 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 119 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 117 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 116 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0021s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.209364s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.198104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001722s ]
+
+[ 2018-03-16T19:05:32+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000129s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005869s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001667s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0057s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0077s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0071s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1521198332 AND ( deadline = 0 OR deadline > 1521198332 ) ORDER BY `id` DESC  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000348s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000507s ]
+INFO: [ Silder ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0035s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'Silder' AND `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hr_silder` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `hr_silder` WHERE `status` = 1 ORDER BY priorityr asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0038s ]
+SQL: SELECT `path` FROM `hr_picture` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.031036s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001234s ]
+INFO: Run Addons\Silder\SilderAddon [ RunTime:0.031942s ]
+INFO: [ Silder ] --END-- [ RunTime:0.032077s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 39 AND `create_time` < 1521198332 AND ( deadline = 0 OR deadline > 1521198332 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 144 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 145 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 146 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 148 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 149 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 150 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 151 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1521198332 AND ( deadline = 0 OR deadline > 1521198332 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,5   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 138 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 139 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 140 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 141 LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 142 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 43 AND `create_time` < 1521198332 AND ( deadline = 0 OR deadline > 1521198332 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 123 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SHOW COLUMNS FROM `hr_url` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `hr_url` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 122 LIMIT 1   [ RunTime:0.0032s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 121 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 120 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 118 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 119 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 117 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 116 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.073030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002142s ]
+
+[ 2018-03-16T19:05:36+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001879s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0043s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0048s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0044s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1521198336 AND ( deadline = 0 OR deadline > 1521198336 ) ORDER BY `id` DESC  [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000404s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000585s ]
+INFO: [ Silder ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0037s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'Silder' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hr_silder` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hr_silder` WHERE `status` = 1 ORDER BY priorityr asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0075s ]
+SQL: SELECT `path` FROM `hr_picture` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.034777s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000665s ]
+INFO: Run Addons\Silder\SilderAddon [ RunTime:0.034918s ]
+INFO: [ Silder ] --END-- [ RunTime:0.035064s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 39 AND `create_time` < 1521198336 AND ( deadline = 0 OR deadline > 1521198336 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 144 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 145 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 146 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 147 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 148 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 149 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 150 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 151 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1521198336 AND ( deadline = 0 OR deadline > 1521198336 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 138 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 139 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 140 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 141 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 142 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 43 AND `create_time` < 1521198336 AND ( deadline = 0 OR deadline > 1521198336 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 123 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SHOW COLUMNS FROM `hr_url` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `hr_url` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 122 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 121 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 120 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 118 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 119 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 117 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 116 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.055756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000686s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2018-03-16T19:05:42+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001836s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0043s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1521198342 AND ( deadline = 0 OR deadline > 1521198342 ) ORDER BY `id` DESC  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000266s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000381s ]
+INFO: [ Silder ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0051s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'Silder' AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hr_silder` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `hr_silder` WHERE `status` = 1 ORDER BY priorityr asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0032s ]
+SQL: SELECT `path` FROM `hr_picture` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.027296s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000803s ]
+INFO: Run Addons\Silder\SilderAddon [ RunTime:0.027445s ]
+INFO: [ Silder ] --END-- [ RunTime:0.027563s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0009s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 39 AND `create_time` < 1521198342 AND ( deadline = 0 OR deadline > 1521198342 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 144 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 145 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 146 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 148 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 149 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 150 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 151 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1521198342 AND ( deadline = 0 OR deadline > 1521198342 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 138 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 139 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 140 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 141 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 142 LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 43 AND `create_time` < 1521198342 AND ( deadline = 0 OR deadline > 1521198342 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 123 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SHOW COLUMNS FROM `hr_url` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `hr_url` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 122 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 121 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 120 LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 118 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 119 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 117 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 116 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: videourl D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Home\0db679e1a1d3d15043ca66afe2b72ba3.php 第 225 行.
+SQL: SELECT * FROM `hr_url` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.059712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000956s ]
+

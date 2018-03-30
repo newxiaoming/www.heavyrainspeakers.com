@@ -1,0 +1,608 @@
+[ 2018-02-08T08:53:00+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004903s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0048s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0046s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0063s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1518051180 AND ( deadline = 0 OR deadline > 1518051180 ) ORDER BY `id` DESC  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+INFO: [ Silder ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0053s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'Silder' AND `status` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hr_silder` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `hr_silder` WHERE `status` = 1 ORDER BY priorityr asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0038s ]
+SQL: SELECT `path` FROM `hr_picture` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.034773s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000796s ]
+INFO: Run Addons\Silder\SilderAddon [ RunTime:0.035172s ]
+INFO: [ Silder ] --END-- [ RunTime:0.035291s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 39 AND `create_time` < 1518051180 AND ( deadline = 0 OR deadline > 1518051180 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,6   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 111 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 110 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 109 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 108 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 107 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 106 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1518051180 AND ( deadline = 0 OR deadline > 1518051180 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 48 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 49 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 50 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 51 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 52 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 43 AND `create_time` < 1518051180 AND ( deadline = 0 OR deadline > 1518051180 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043107s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.031580s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002059s ]
+
+[ 2018-02-08T09:30:41+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004877s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001740s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0043s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0046s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1518053441 AND ( deadline = 0 OR deadline > 1518053441 ) ORDER BY `id` DESC  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ Silder ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0050s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'Silder' AND `status` = 1 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hr_silder` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `hr_silder` WHERE `status` = 1 ORDER BY priorityr asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0047s ]
+SQL: SELECT `path` FROM `hr_picture` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.031611s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006826s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000817s ]
+INFO: Run Addons\Silder\SilderAddon [ RunTime:0.031451s ]
+INFO: [ Silder ] --END-- [ RunTime:0.031558s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 39 AND `create_time` < 1518053441 AND ( deadline = 0 OR deadline > 1518053441 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,6   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 111 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 110 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 109 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 108 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 107 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 106 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1518053441 AND ( deadline = 0 OR deadline > 1518053441 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 48 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 49 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 50 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 51 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 52 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 43 AND `create_time` < 1518053441 AND ( deadline = 0 OR deadline > 1518053441 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006826s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.027809s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001753s ]
+
+[ 2018-02-08T09:43:45+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003724s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0036s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0048s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1518054225 AND ( deadline = 0 OR deadline > 1518054225 ) ORDER BY `id` DESC  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000338s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000468s ]
+INFO: [ Silder ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0042s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'Silder' AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hr_silder` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `hr_silder` WHERE `status` = 1 ORDER BY priorityr asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0040s ]
+SQL: SELECT `path` FROM `hr_picture` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.028663s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004838s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000773s ]
+INFO: Run Addons\Silder\SilderAddon [ RunTime:0.027669s ]
+INFO: [ Silder ] --END-- [ RunTime:0.027787s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 39 AND `create_time` < 1518054225 AND ( deadline = 0 OR deadline > 1518054225 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,6   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 111 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 110 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 109 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 108 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 107 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 106 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1518054225 AND ( deadline = 0 OR deadline > 1518054225 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 48 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 49 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 50 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 51 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 52 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 43 AND `create_time` < 1518054225 AND ( deadline = 0 OR deadline > 1518054225 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004838s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.038427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002186s ]
+
+[ 2018-02-08T10:38:05+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004687s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001869s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0066s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0071s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0053s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1518057484 AND ( deadline = 0 OR deadline > 1518057484 ) ORDER BY `id` DESC  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000321s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000484s ]
+INFO: [ Silder ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0039s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'Silder' AND `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hr_silder` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `hr_silder` WHERE `status` = 1 ORDER BY priorityr asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0046s ]
+SQL: SELECT `path` FROM `hr_picture` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.033408s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000790s ]
+INFO: Run Addons\Silder\SilderAddon [ RunTime:0.032390s ]
+INFO: [ Silder ] --END-- [ RunTime:0.032501s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0009s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 39 AND `create_time` < 1518057484 AND ( deadline = 0 OR deadline > 1518057484 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,6   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 111 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 110 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 109 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 108 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 107 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 106 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1518057484 AND ( deadline = 0 OR deadline > 1518057484 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,5   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 48 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 49 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 50 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 51 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 52 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 43 AND `create_time` < 1518057484 AND ( deadline = 0 OR deadline > 1518057484 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0009s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.040499s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003200s ]
+
+[ 2018-02-08T11:42:25+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0057s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0101s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0058s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1518061345 AND ( deadline = 0 OR deadline > 1518061345 ) ORDER BY `id` DESC  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000320s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000443s ]
+INFO: [ Silder ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0045s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'Silder' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hr_silder` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `hr_silder` WHERE `status` = 1 ORDER BY priorityr asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0038s ]
+SQL: SELECT `path` FROM `hr_picture` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000355s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.030638s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007820s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000872s ]
+INFO: Run Addons\Silder\SilderAddon [ RunTime:0.031570s ]
+INFO: [ Silder ] --END-- [ RunTime:0.031671s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 39 AND `create_time` < 1518061345 AND ( deadline = 0 OR deadline > 1518061345 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,6   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 111 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 110 LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 109 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 108 LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 107 LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 106 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1518061345 AND ( deadline = 0 OR deadline > 1518061345 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 48 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 49 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 50 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 51 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 52 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 43 AND `create_time` < 1518061345 AND ( deadline = 0 OR deadline > 1518061345 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0012s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.039549s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001938s ]
+
+[ 2018-02-08T15:53:56+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005489s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006947s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001645s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0051s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0066s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0098s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1518076436 AND ( deadline = 0 OR deadline > 1518076436 ) ORDER BY `id` DESC  [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000329s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000490s ]
+INFO: [ Silder ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0044s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'Silder' AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hr_silder` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `hr_silder` WHERE `status` = 1 ORDER BY priorityr asc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0036s ]
+SQL: SELECT `path` FROM `hr_picture` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.031859s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000970s ]
+INFO: Run Addons\Silder\SilderAddon [ RunTime:0.030479s ]
+INFO: [ Silder ] --END-- [ RunTime:0.030617s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 39 AND `create_time` < 1518076436 AND ( deadline = 0 OR deadline > 1518076436 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,6   [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 111 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 110 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 109 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 108 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 107 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 106 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1518076436 AND ( deadline = 0 OR deadline > 1518076436 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 48 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 49 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 50 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 51 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 52 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 43 AND `create_time` < 1518076436 AND ( deadline = 0 OR deadline > 1518076436 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0008s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.035847s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001958s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002078s ]
+
+[ 2018-02-08T22:29:09+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006017s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001867s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0051s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0077s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0061s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1518100148 AND ( deadline = 0 OR deadline > 1518100148 ) ORDER BY `id` DESC  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000359s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000518s ]
+INFO: [ Silder ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0045s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'Silder' AND `status` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `hr_silder` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `hr_silder` WHERE `status` = 1 ORDER BY priorityr asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0043s ]
+SQL: SELECT `path` FROM `hr_picture` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.031931s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006144s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000816s ]
+INFO: Run Addons\Silder\SilderAddon [ RunTime:0.030900s ]
+INFO: [ Silder ] --END-- [ RunTime:0.031033s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 39 AND `create_time` < 1518100148 AND ( deadline = 0 OR deadline > 1518100148 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,6   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 111 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 110 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 109 LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 108 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 107 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 106 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1518100148 AND ( deadline = 0 OR deadline > 1518100148 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 48 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 49 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 50 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 51 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 52 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 43 AND `create_time` < 1518100148 AND ( deadline = 0 OR deadline > 1518100148 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006144s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.030485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001908s ]
+
+[ 2018-02-08T22:59:04+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+SQL: SHOW COLUMNS FROM `hr_config` [ RunTime:0.0037s ]
+SQL: SELECT `type`,`name`,`value` FROM `hr_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0044s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0042s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1518101944 AND ( deadline = 0 OR deadline > 1518101944 ) ORDER BY `id` DESC  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000352s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000503s ]
+INFO: [ Silder ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0050s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'Silder' AND `status` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `hr_silder` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `hr_silder` WHERE `status` = 1 ORDER BY priorityr asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0040s ]
+SQL: SELECT `path` FROM `hr_picture` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.031451s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000746s ]
+INFO: Run Addons\Silder\SilderAddon [ RunTime:0.031079s ]
+INFO: [ Silder ] --END-- [ RunTime:0.031183s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 39 AND `create_time` < 1518101944 AND ( deadline = 0 OR deadline > 1518101944 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,6   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 111 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 110 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 109 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 108 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 107 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 106 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant UPLOAD_URL already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1029 行.
+NOTIC: [8] Constant UPLOAD_PATH already defined D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 1030 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1518101944 AND ( deadline = 0 OR deadline > 1518101944 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 48 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 49 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 50 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 51 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 52 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `hr_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 43 AND `create_time` < 1518101944 AND ( deadline = 0 OR deadline > 1518101944 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035717s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.029644s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001554s ]
+

@@ -1,0 +1,44 @@
+<div class="g-footer" tpl="footer"></div>
+<script id="tpl-footer" type="text/html">
+    <footer class="footer">
+        <div class="footer-contact">
+            <div class="g-center">
+                <h3>{{ title }}</h3>
+                <p>{{@ desc }}</p>
+                <a href="{{ href }}">{{ button }}</a>
+            </div>
+        </div>
+        <div class="footer-copyright">© 2017 HeavyRain Inc</div>
+    </footer>
+</script>
+<script>
+    i18next.init({
+        lng: window.$lang,
+        debug: window.$debug,
+        resources: {
+            en: {
+                footer: {
+                    title: 'About Us',
+                    desc: 'Listen, learn, and change. Heavyrain, connect to the great minds.<br>International Speakers Provider<br>Planning and coordinating conferences<br>International resources exchanging and cooperating<br>Let\'s make a change!',
+                    button: 'CONTACT US',
+                    href: '/index.php?s=/Home/index/about'
+                },
+            },
+            cn: {
+                footer: {
+                    title: '关于我们',
+                    desc: '暴雨倾盆——慢听风吹雨声声，入耳观心<br>国际演讲嘉宾经纪服务<br>策划及统筹国际级会议<br>国际交流合作资源对接<br>思想触发改变!',
+                    button: '联系我们',
+                    href: '/index.php?s=/Home/index/about'
+                },
+            },
+        },
+    }, function ( err, t ) {
+        document.querySelector('[tpl="footer"]').innerHTML = template('tpl-footer', {
+            title: t('footer:title'),
+            desc: t('footer:desc'),
+            button: t('footer:button'),
+            href: t('footer:href')
+        });
+    });
+</script>

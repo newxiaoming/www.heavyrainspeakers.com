@@ -1,0 +1,294 @@
+[ 2018-03-27T14:10:15+08:00 ] 121.8.250.154 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001919s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+
+[ 2018-03-27T14:10:15+08:00 ] 121.8.250.154 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002291s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000378s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2018-03-27T14:10:16+08:00 ] 121.8.250.154 /admin.php?s=/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001264s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001524s ]
+
+[ 2018-03-27T14:10:59+08:00 ] 121.8.250.154 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+NOTIC: [8] Undefined index: lite D:\wwwroot\heavyrain\wwwroot\ThinkPHP\Library\Think\Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `hr_member` [ RunTime:0.0035s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `hr_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hr_action` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `hr_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `hr_action_log` [ RunTime:0.0045s ]
+SQL: INSERT INTO `hr_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2030631578','member','1','1522131059','admin在2018-03-27 14:10登录了后台') [ RunTime:0.0021s ]
+SQL: SELECT * FROM `hr_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 1 D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\wwwroot\heavyrain\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `hr_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1522044659 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `hr_member` [ RunTime:0.0027s ]
+SQL: UPDATE `hr_member` SET `score`=score+10 WHERE ( uid=1 AND status>-1 ) [ RunTime:0.0008s ]
+SQL: UPDATE `hr_member` SET `login`=`login`+1,`last_login_time`='1522131059',`last_login_ip`='2030631578' WHERE `uid` = 1 [ RunTime:0.0005s ]
+
+[ 2018-03-27T14:10:59+08:00 ] 121.8.250.154 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001614s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `hr_menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`url` FROM `hr_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0064s ]
+SQL: SELECT `pid` FROM `hr_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000422s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2018-03-27T14:11:13+08:00 ] 121.8.250.154 /admin.php?s=/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001495s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001901s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `hr_menu` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`title`,`url` FROM `hr_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SELECT `pid` FROM `hr_menu` WHERE ( pid !=0 AND url like '%Article/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_menu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT DISTINCT  `group` FROM `hr_menu` WHERE `group` <> '' AND `pid` = 2  [ RunTime:0.0022s ]
+SQL: SELECT `id`,`url` FROM `hr_menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `hr_menu` WHERE `group` = '内容' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hr_auth_group_access` [ RunTime:0.0053s ]
+SQL: SELECT `extend_id` FROM hr_auth_group_access g INNER JOIN hr_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `hr_category` WHERE `status` = 1 ORDER BY pid,sort  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hr_model` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `hr_model` WHERE `name` = 'document' LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM hr_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid` FROM hr_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0039s ]
+SQL: SELECT `extend` FROM `hr_model` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hr_attribute` [ RunTime:0.0053s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `hr_attribute` WHERE `model_id` = 1  [ RunTime:0.0039s ]
+NOTIC: [8] Undefined variable: groups D:\wwwroot\heavyrain\wwwroot\Application\Admin\Controller\ArticleController.class.php 第 231 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000576s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000734s ]
+NOTIC: [8] Undefined index: _child D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+NOTIC: [8] Undefined index: _child D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+NOTIC: [8] Undefined index: _child D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+NOTIC: [8] Undefined index: _child D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+NOTIC: [8] Undefined index: _child D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+NOTIC: [8] Undefined index: _child D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
+
+[ 2018-03-27T14:11:20+08:00 ] 121.8.250.154 /admin.php?s=/Article/edit/id/81/model/1/cate_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001925s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `hr_menu` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`title`,`url` FROM `hr_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SELECT `pid` FROM `hr_menu` WHERE ( pid !=0 AND url like '%Article/edit%' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hr_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hr_menu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT DISTINCT  `group` FROM `hr_menu` WHERE `group` <> '' AND `pid` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`url` FROM `hr_menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `hr_menu` WHERE `group` = '内容' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hr_auth_group_access` [ RunTime:0.0037s ]
+SQL: SELECT `extend_id` FROM hr_auth_group_access g INNER JOIN hr_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `hr_category` WHERE `status` = 1 ORDER BY pid,sort  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`title`,`pid` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0046s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `id` = 81 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hr_document_speakers` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`honor`,`content`,`title_en`,`content_en`,`honor_en` FROM `hr_document_speakers` WHERE `id` = 81 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hr_model` [ RunTime:0.0032s ]
+SQL: SELECT `extend` FROM `hr_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hr_attribute` [ RunTime:0.0053s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `hr_attribute` WHERE `model_id` IN ('4','1')  [ RunTime:0.0011s ]
+SQL: SELECT `field_sort`,`attribute_list`,`attribute_alias` FROM `hr_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `type` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000877s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001044s ]
+NOTIC: [8] Undefined index: _child D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 77 行.
+NOTIC: [8] Undefined index: _child D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 77 行.
+NOTIC: [8] Undefined index: _child D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 77 行.
+NOTIC: [8] Undefined index: _child D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 77 行.
+NOTIC: [8] Undefined index: _child D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 77 行.
+NOTIC: [8] Undefined index: _child D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 77 行.
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 128 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 128 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0056s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'EditorForAdmin' AND `status` = 1 LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.064348s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000540s ]
+INFO: Run Addons\EditorForAdmin\EditorForAdminAddon [ RunTime:0.045180s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.045296s ]
+INFO: [ adminArticleEdit ] --START--
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.077991s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010421s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.010985s ]
+INFO: Run Addons\EditorForAdmin\EditorForAdminAddon [ RunTime:0.010939s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:-0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011189s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.011776s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001152s ]
+
+[ 2018-03-27T14:11:27+08:00 ] 121.8.250.154 /admin.php?s=/Article/edit/id/81/model/1/cate_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001890s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `hr_menu` [ RunTime:0.0042s ]
+SQL: SELECT `id`,`title`,`url` FROM `hr_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SELECT `pid` FROM `hr_menu` WHERE ( pid !=0 AND url like '%Article/edit%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_menu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT DISTINCT  `group` FROM `hr_menu` WHERE `group` <> '' AND `pid` = 2  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`url` FROM `hr_menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `hr_menu` WHERE `group` = '内容' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hr_auth_group_access` [ RunTime:0.0038s ]
+SQL: SELECT `extend_id` FROM hr_auth_group_access g INNER JOIN hr_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `hr_category` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `hr_category` WHERE `status` = 1 ORDER BY pid,sort  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`title`,`pid` FROM `hr_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hr_document` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `hr_document` WHERE `id` = 81 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `hr_document_speakers` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`honor`,`content`,`title_en`,`content_en`,`honor_en` FROM `hr_document_speakers` WHERE `id` = 81 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hr_model` [ RunTime:0.0026s ]
+SQL: SELECT `extend` FROM `hr_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `hr_attribute` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `hr_attribute` WHERE `model_id` IN ('4','1')  [ RunTime:0.0007s ]
+SQL: SELECT `field_sort`,`attribute_list`,`attribute_alias` FROM `hr_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `type` FROM `hr_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000592s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000706s ]
+NOTIC: [8] Undefined index: _child D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 77 行.
+NOTIC: [8] Undefined index: _child D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 77 行.
+NOTIC: [8] Undefined index: _child D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 77 行.
+NOTIC: [8] Undefined index: _child D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 77 行.
+NOTIC: [8] Undefined index: _child D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 77 行.
+NOTIC: [8] Undefined index: _child D:\wwwroot\heavyrain\wwwroot\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 77 行.
+SQL: SHOW COLUMNS FROM `hr_picture` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 128 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hr_picture` WHERE `status` = 1 AND `id` = 128 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `hr_addons` [ RunTime:0.0039s ]
+SQL: SELECT `config` FROM `hr_addons` WHERE `name` = 'EditorForAdmin' AND `status` = 1 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.030701s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000782s ]
+INFO: Run Addons\EditorForAdmin\EditorForAdminAddon [ RunTime:0.018868s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.018972s ]
+INFO: [ adminArticleEdit ] --START--
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.043142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010270s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.011077s ]
+INFO: Run Addons\EditorForAdmin\EditorForAdminAddon [ RunTime:0.010986s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:-0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011055s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.011824s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000731s ]
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 公共描述 start public/head -->
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+
+<!-- 公共描述 end -->
+<!-- 公共样式 start -->
+<script src="__STATIC__/assets/lodash.js?t=1511228427927"></script>
+<script src="__STATIC__/assets/i18next.min.js?t=1511228427927"></script>
+<script src="__STATIC__/assets/modernizr.min.js?t=1511228427927"></script>
+<script src="__STATIC__/assets/template-web.js?t=1511228427927"></script>
+<script src="__STATIC__/assets/micro-storage.min.js?t=1511228427927"></script>
+<link rel="stylesheet" href="__STATIC__/assets/swiper.min.css?t=1511228427927">
+<link rel="stylesheet" href="__STATIC__/css/main.css?t=1511228427927">
+<!-- 公共样式 end -->
+
+        <title>{:C('WEB_SITE_TITLE')}</title>
+        <meta name="keywords" content="keywords">
+        <meta name="description" content="description">
+    </head>
+    <body>
+        <script>
+(function () {
+    var store = microStorage('HEAVYRAIN');
+    var lang = store('language');
+    window.$lang = lang ? lang : /zh/i.test(navigator.language) ? 'cn' : 'en';
+    store('language', window.$lang);
+})();
+</script>
+
+<script>window.$debug = true</script>
+<script>document.body.classList.add('lang-' + window.$lang)</script>
+
+        <div class="g-layout news">
+                <include file="Public/topnav"/>
+
+            <div class="g-body">
+                <!-- 背景 start public/banner -->
+<div class="g-banner is-ceil"></div>
+<div class="g-banner is-floor"></div>
+<!-- 背景 end -->
+
+                <div class="g-center">
+                    <!-- 新闻详情 start -->
+                    <div class="g-container" tpl="main"></div>
+                    <script id="tpl-main" type="text/html">
+                        <h2 class="news__title">{{ title }}</h2>
+                        <div class="news__article">
+                            <img src="{$info.cover_id|get_cover='path'}" alt="{$info.title}" width="1150" height="325">
+                            <div class="g-main">
+                                <h1>{$info.title}</h1>
+                                <span>日期：{$info.create_time|date='Y年m月d日',###}</span>
+                                {$info.content}
+                                <div class="g-shape5"></div>
+                            </div>
+                        </div>
+                    </script>
+                    <script>
+                        i18next.init({
+                            lng: window.$lang,
+                            debug: window.$debug,
+                            returnObjects: true,
+                            resources: {
+                                en: {
+                                    main: {
+                                        title: "{$category['name']}",
+                                    },
+                                },
+                                cn: {
+                                    main: {
+                                        title: "{$category['title']}",
+                                    },
+                                },
+                            },
+                        }, function ( err, t ) {
+                            document.querySelector('[tpl="main"]').innerHTML = template('tpl-main', {
+                                title: t('main:title'),
+                            });
+                        });
+                    </script>
+                    <!-- 新闻详情 end -->
+                </div>
+            </div>
+            <!-- 页脚 start public/footer -->
+<!-- 底部 -->
+<include file="Public/footer"/>
+<!-- /底部 -->
+<!-- 页脚 end -->
+<!-- 公共脚本 start -->
+<script src="__STATIC__/assets/axios.min.js?t=1511228427927"></script>
+<script src="__STATIC__/assets/swiper.min.js?t=1511228427927"></script>
+<script src="__STATIC__/js/main.js?t=1511228427927"></script>
+<!-- 公共脚本 end -->
+
+        </div>
+    </body>
+</html>

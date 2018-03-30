@@ -1,0 +1,93 @@
+<!-- 顶栏 start public/topbar -->
+<div class="g-topbar" tpl="topbar"></div>
+<script id="tpl-topbar" type="text/html">
+    <nav class="topbar">
+        <div class="g-center">
+            <div class="topbar-logo">
+                <a href="/">
+                    <h1>HEAVYRAIN | SPEAKERS™</h1>
+                </a>
+            </div>
+            <div class="topbar-menu">
+                <select name="language" id="language">
+                    <option value="en" {{ lang == 'en' ? 'selected' : '' }}>EN</option>
+                    <option value="cn" {{ lang == 'cn' ? 'selected' : '' }}>CN</option>
+                </select>
+                <ul>
+                    {{each buttons}}
+                        <li>
+                            <a href="{{ $value.link }}">
+                                <span>{{ $value.text }}</span>
+                            </a>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</script>
+<script>
+    i18next.init({
+        lng: window.$lang,
+        debug: window.$debug,
+        returnObjects: true,
+        resources: {
+            en: {
+                topbar: {
+                    buttons: [
+                        'OUR SPEAKERS',
+                        'ADVISORY SERVICES',
+                        'CASE',
+                        'NEWS',
+                        'ABOUT US',
+                        'EN',
+                    ],
+                },
+            },
+            cn: {
+                topbar: {
+                    buttons: [
+                        '演讲嘉宾',
+                        '服务分类',
+                        '成功案例',
+                        '新闻',
+                        '关于我们',
+                        'CN',
+                    ],
+                },
+            },
+        },
+    }, function ( err, t ) {
+        var links = [
+        '/index.php?s=/Home/Article/lists/category/speakers.html', // 演讲嘉宾
+        '/index.php?s=/Home/Article/lists/category/advisoryservices.html', // 服务分类
+        '/index.php?s=/Home/Article/lists/category/case.html', // 成功案例
+        '/index.php?s=/Home/Article/lists/category/news.html', // 新闻
+        '/index.php?s=/Home/index/about.html', // 关于我们
+            '#',
+        ];
+        document.querySelector('[tpl="topbar"]').innerHTML = template('tpl-topbar', {
+            buttons: _.map(t('topbar:buttons'), function ( text, index ) {
+                var link = links[index];
+                return {
+                    text : text,
+                    link : link,
+                };
+            }),
+            lang: window.$lang,
+        });
+
+        document.querySelector('.topbar .topbar-menu ul li:last-child a').addEventListener('click', function ( event ) {
+            event.preventDefault();
+        }, false);
+    });
+    document.querySelector('#language').addEventListener('change', function () {
+        if (this.value === window.$lang) {
+            return;
+        }
+        var store = microStorage('HEAVYRAIN');
+        store('language', this.value);
+        window.location.reload();
+    }, false);
+</script>
+<!-- 顶栏 end -->

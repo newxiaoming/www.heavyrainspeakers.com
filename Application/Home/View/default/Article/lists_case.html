@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 公共描述 start public/head -->
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+
+<!-- 公共描述 end -->
+<!-- 公共样式 start -->
+<script src="__STATIC__/assets/lodash.js?t=1511228427927"></script>
+<script src="__STATIC__/assets/i18next.min.js?t=1511228427927"></script>
+<script src="__STATIC__/assets/modernizr.min.js?t=1511228427927"></script>
+<script src="__STATIC__/assets/template-web.js?t=1511228427927"></script>
+<script src="__STATIC__/assets/micro-storage.min.js?t=1511228427927"></script>
+<link rel="stylesheet" href="__STATIC__/assets/swiper.min.css?t=1511228427927">
+<link rel="stylesheet" href="__STATIC__/css/main.css?t=1511228427927">
+<!-- 公共样式 end -->
+
+        <title>{:C('WEB_SITE_TITLE')}</title>
+        <meta name="keywords" content="keywords">
+        <meta name="description" content="description">
+    </head>
+    <body>
+        <script>
+(function () {
+    var store = microStorage('HEAVYRAIN');
+    var lang = store('language');
+    window.$lang = lang ? lang : /zh/i.test(navigator.language) ? 'cn' : 'en';
+    store('language', window.$lang);
+})();
+</script>
+
+<script>window.$debug = true</script>
+<script>document.body.classList.add('lang-' + window.$lang)</script>
+
+        <div class="g-layout case-list">
+                <include file="Public/topnav"/>
+
+            <div class="g-body">
+                <!-- 背景 start public/banner -->
+<div class="g-banner is-ceil"></div>
+<div class="g-banner is-floor"></div>
+<!-- 背景 end -->
+
+                <div class="g-center">
+                    <!-- 案例列表 start -->
+                    <div class="g-container" tpl="main"></div>
+                    <script id="tpl-main" type="text/html">
+                        <h2 class="case-list__title">{{ title }}</h2>
+                        <div class="case-list__list">
+                            <ul>                                
+                                <volist name="list" id="data">
+                                    <!-- 单个案例 start item/case-item -->
+                                    <li>
+                                        <div class="case-list__item">
+                                            <a href="{:U('Article/detail?id='.$data['id'])}" title="{$data.title}">
+                                                <img src="{$data.cover_id|get_cover='path'}" alt="{$data.title}" width="1150" height="325">
+                                            </a>
+                                            <a href="{:U('Article/detail?id='.$data['id'])}" title="{$data.title}">
+                                                <h4>案例:  {$data.title}</h4>
+                                            </a>
+                                            <p>{$data.description}</p>
+                                            <br>
+                                            <span>日期：{$data.create_time|date='Y年m月d日',###}</span>
+                                            <a href="{:U('Article/detail?id='.$data['id'])}"><i>详情</i></a>
+                                            <br>
+                                        </div>
+                                    </li>
+                                    <!-- 单个案例 end --> 
+                                </volist>    
+                            </ul>
+                        </div>
+                        <div class="g-main">
+                            <div class="g-shape4"></div>
+                            <div class="g-tab">{{ partner }}</div>
+                        </div>
+                        <div class="case-list__partner">
+                                {:hook('linkspartner', 1)}
+                        </div>
+                    </script>
+                    <script>
+                        i18next.init({
+                            lng: window.$lang,
+                            debug: window.$debug,
+                            returnObjects: true,
+                            resources: {
+                                en: {
+                                    main: {
+                                        title: 'CASES',
+                                        partner: 'PARRNER',
+                                    },
+                                },
+                                cn: {
+                                    main: {
+                                        title: '成功案例',
+                                        partner: '合作伙伴',
+                                    },
+                                },
+                            },
+                        }, function ( err, t ) {
+                            document.querySelector('[tpl="main"]').innerHTML = template('tpl-main', {
+                                title: t('main:title'),
+                                partner: t('main:partner'),
+                            });
+                        });
+                    </script>
+                    <!-- 案例列表 end -->
+                </div>
+            </div>
+            <!-- 页脚 start public/footer -->
+<!-- 底部 -->
+<include file="Public/footer"/>
+<!-- /底部 -->
+<!-- 页脚 end -->
+<!-- 公共脚本 start -->
+<script src="__STATIC__/assets/axios.min.js?t=1511228427927"></script>
+<script src="__STATIC__/assets/swiper.min.js?t=1511228427927"></script>
+<script src="__STATIC__/js/main.js?t=1511228427927"></script>
+<!-- 公共脚本 end -->
+
+        </div>
+    </body>
+</html>
