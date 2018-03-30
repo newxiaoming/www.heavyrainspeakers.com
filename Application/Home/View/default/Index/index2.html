@@ -189,7 +189,7 @@
                                         cases: [
                                             <?php
                                                 foreach ($cases as $key=>$value){
-                                                    echo "{title: ' " . $value['title'] . "', path: '" . get_cover($value['cover_id'],'path') . "',text:' " . $value['description']. "', id: '" . $value['id'] . "'},";
+                                                    echo "{title: ' " . $value['title'] . "', path: '" . get_cover($value['thumb'],'path') . "',text:' " . $value['description']. "', id: '" . $value['id'] . "'},";
                                                 }
                                             ?>
                                         ]
@@ -219,7 +219,7 @@
                                         cases: [
                                             <?php
                                                 foreach ($cases as $key=>$value){
-                                                    echo "{title: ' " . $value['title'] . "', path: '" . get_cover($value['cover_id'],'path') . "',text:' " . $value['description']. "', id: '" . $value['id'] . "'},";
+                                                    echo "{title: ' " . $value['title'] . "', path: '" . get_cover($value['thumb'],'path') . "',text:' " . $value['description']. "', id: '" . $value['id'] . "'},";
                                                 }
                                             ?>
                                         ]

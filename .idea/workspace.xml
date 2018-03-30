@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c648b38f-ed9c-4a54-8b19-db1dcbaeea34" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Article/add.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Article/add.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Article/edit.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Article/edit.html" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/761055de2f430bef08441163fbb8bda7.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/761055de2f430bef08441163fbb8bda7.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/View/default/Article/detail_case.html" afterPath="$PROJECT_DIR$/Application/Home/View/default/Article/detail_case.html" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/View/default/Index/index2.html" afterPath="$PROJECT_DIR$/Application/Home/View/default/Index/index2.html" />
+      <change beforePath="$PROJECT_DIR$/Public/static/css/main.css" afterPath="$PROJECT_DIR$/Public/static/css/main.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,17 +27,83 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="add.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Admin/View/Article/add.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="135" column="83" lean-forward="true" selection-start-line="135" selection-start-column="83" selection-end-line="135" selection-end-column="83" />
+            <state relative-caret-position="608">
+              <caret line="137" column="29" lean-forward="true" selection-start-line="137" selection-start-column="29" selection-end-line="137" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail_case.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/View/default/Article/detail_case.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="55" column="54" lean-forward="false" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index2.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/Home/View/default/Index/index2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="670">
+              <caret line="221" column="128" lean-forward="false" selection-start-line="221" selection-start-column="128" selection-end-line="221" selection-end-column="128" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="39" column="62" lean-forward="false" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lists_case.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/View/default/Article/lists_case.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-684">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/static/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="6" column="21265" lean-forward="false" selection-start-line="6" selection-start-column="21265" selection-end-line="6" selection-end-column="21265" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticleController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ArticleController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1615">
+              <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.case .g-container .case__article img:first-child</find>
+      <find>path</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,6 +113,11 @@
       <list>
         <option value="$PROJECT_DIR$/Application/Admin/View/Article/edit.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Article/add.html" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/ArticleController.class.php" />
+        <option value="$PROJECT_DIR$/Public/static/css/main.css" />
+        <option value="$PROJECT_DIR$/Application/Home/View/default/Article/detail_case.html" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/View/default/Index/index2.html" />
       </list>
     </option>
   </component>
@@ -111,6 +184,70 @@
               <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Article" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="heavyrainspeakers.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="heavyrainspeakers.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="heavyrainspeakers.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="heavyrainspeakers.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="heavyrainspeakers.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="heavyrainspeakers.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="heavyrainspeakers.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="heavyrainspeakers.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="heavyrainspeakers.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="heavyrainspeakers.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Article" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="heavyrainspeakers.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="heavyrainspeakers.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Index" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="heavyrainspeakers.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="heavyrainspeakers.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="heavyrainspeakers.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="heavyrainspeakers.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="heavyrainspeakers.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="heavyrainspeakers.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -146,12 +283,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522379289471</updated>
-      <workItem from="1522379290806" duration="6992000" />
+      <workItem from="1522379290806" duration="10654000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6992000" />
+    <option name="totallyTimeSpent" value="10654000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -198,8 +335,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/View/Article/add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="135" column="83" lean-forward="true" selection-start-line="135" selection-start-column="83" selection-end-line="135" selection-end-column="83" />
+        <state relative-caret-position="608">
+          <caret line="137" column="29" lean-forward="true" selection-start-line="137" selection-start-column="29" selection-end-line="137" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="6" column="21265" lean-forward="false" selection-start-line="6" selection-start-column="21265" selection-end-line="6" selection-end-column="21265" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/default/Article/lists_case.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-684">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/default/Article/detail_case.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="55" column="54" lean-forward="false" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ArticleController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="39" column="62" lean-forward="false" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/default/Index/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="670">
+          <caret line="221" column="128" lean-forward="false" selection-start-line="221" selection-start-column="128" selection-end-line="221" selection-end-column="128" />
           <folding />
         </state>
       </provider>

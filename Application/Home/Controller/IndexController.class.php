@@ -37,11 +37,12 @@ class IndexController extends HomeController {
         }
 
         $cases    = D('Document')
-        ->field('title, cover_id, description,id')
-        ->where('category_id = 41 AND status = 1')
-        ->order(array('level'=>'desc'))
-        ->limit(5)
-        ->select();
+            ->field('title, cover_id, description,hr_document.id, thumb')
+            ->join('hr_document_article ON hr_document.id = hr_document_article.id')
+            ->where('category_id = 41 AND status = 1')
+            ->order(array('level'=>'desc'))
+            ->limit(5)
+            ->select();
 
 
         $SilderModel = D('Addons://Silder/Silder');
