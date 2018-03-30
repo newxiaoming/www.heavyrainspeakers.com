@@ -155,9 +155,13 @@
 	</style>
 	<!--引入JS-->
 	<!--<script type="text/javascript" src="/Public/static/webuploader/webuploader.js"></script>-->
-	<script type="text/javascript" src="/Public/static/js/jquery.ui.widget.js"></script>
-	<script type="text/javascript" src="/Public/static/js/jquery.iframe-transport.js"></script>
-	<script type="text/javascript" src="/Public/static/js/jquery.fileupload.js"></script>
+	<!--//fileupload-->
+	<!--<script type="text/javascript" src="/Public/static/js/jquery.ui.widget.js"></script>-->
+	<!--<script type="text/javascript" src="/Public/static/js/jquery.iframe-transport.js"></script>-->
+	<!--<script type="text/javascript" src="/Public/static/js/jquery.fileupload.js"></script>-->
+	<!--//UploadiFive-->
+	<script src="jquery.uploadifive.js" type="text/javascript"></script>
+
 	<div class="main-title cf">
 		<h2>
 			编辑<?php echo (get_document_model($data["model_id"],'title')); ?> [
@@ -211,35 +215,54 @@
 									</div>
 								</div> -->
 								<!--dom结构部分-->
+								<!--<div class="controls">-->
+									<!--<input type="file" id="fileupload_<?php echo ($field["name"]); ?>" name="<?php echo ($field["name"]); ?>" data-url="<?php echo U('File/uploadPicture',array('session_id'=>session_id()));?>">-->
+									<!--&lt;!&ndash;<input type="hidden" name="<?php echo ($field["name"]); ?>" id="cover_id_<?php echo ($field["name"]); ?>" value="<?php echo ($data[$field['name']]); ?>"/>&ndash;&gt;-->
+									<!--<div class="upload-img-box_<?php echo ($field["name"]); ?>">-->
+										<!--<?php if(!empty($data[$field['name']])): ?>-->
+											<!--<div class="upload-pre-item"><img src="<?php echo (get_cover($data[$field['name']],'path')); ?>"/></div>-->
+										<!--<?php endif; ?>-->
+									<!--</div>-->
+								<!--</div>-->
 								<div class="controls">
-									<input type="file" id="fileupload_<?php echo ($field["name"]); ?>" name="<?php echo ($field["name"]); ?>" data-url="<?php echo U('File/uploadPicture',array('session_id'=>session_id()));?>">
-									<!--<input type="hidden" name="<?php echo ($field["name"]); ?>" id="cover_id_<?php echo ($field["name"]); ?>" value="<?php echo ($data[$field['name']]); ?>"/>-->
-									<div class="upload-img-box_<?php echo ($field["name"]); ?>">
+									<input type="file" id="upload_picture_<?php echo ($field["name"]); ?>">
+									<input type="hidden" name="<?php echo ($field["name"]); ?>" id="cover_id_<?php echo ($field["name"]); ?>" value="<?php echo ($data[$field['name']]); ?>"/>
+									<div class="upload-img-box">
 										<?php if(!empty($data[$field['name']])): ?><div class="upload-pre-item"><img src="<?php echo (get_cover($data[$field['name']],'path')); ?>"/></div><?php endif; ?>
 									</div>
 								</div>
 								<script>
-                                    $("#fileupload_<?php echo ($field["name"]); ?>").fileupload({
-                                        dataType: 'json',
-
-                                        submit: function(e, data){
-                                            var input = $("#fileupload_<?php echo ($field["name"]); ?>");
-                                            // var field = <?php echo ($field["name"]); ?>;
-                                            data.formData = {download: input.val()};
-                                            console.log(data.formData);
-										},
-                                        send:function (e, data) {
-                                            if (data.files.length > 10) {
-                                                return false;
-                                            }
+                                    $("upload_picture_<?php echo ($field["name"]); ?>").uploadifive({
+                                        'height':30,
+                                        'width': 80,
+                                        'fileObjName':'download',//后台获取使用的名字
+                                        'method':'post',
+                                        'auto':false,
+                                        'buttonText': '选择图片',
+                                        'fileType'  : 'image/*',//只允许图片格式的文件
+                                        'queueSizeLimit' : 1,//这里我只允许单个图片上传
+                                        'removeCompleted' : true,//文件上传完成之后去除进度条
+                                        'uploadScript':'<?php echo U('File/uploadPicture',array('session_id'=>session_id()));?>',//处理上传文件的后台url
+                                        'onFallback': function () {
+                                            alert("请使用支持HTML5的浏览器");
                                         },
-                                        done: function (e, data) {
-                                            $.each(data.result.files, function (index, file) {
-                                                $(this).text(file.name).appendTo("upload-img-box_<?php echo ($field["name"]); ?>");
-                                            });
-                                        }
-									});
+                                        //上传到服务器，服务器返回相应信息到data里
+                                        'onUploadComplete': function (file, data) 
+                                    });
 								</script>
+								<!--<script>-->
+                                    <!--$("#fileupload_<?php echo ($field["name"]); ?>").fileupload(<?php echo --> <!--dataType: 'json',--> <!--submit: function(e, data)<?php echo --> <!--var input = $("#fileupload_<?php echo ($field["name;?>");-->
+                                            <!--// var field = <?php echo ($field["name"]); ?>;-->
+                                            <!--data"]["formData = {download: input"]["val();?>;-->
+                                            <!--console"]["log(data"]["formData);-->
+										<!--"]); ?>,-->
+                                        <!--send:function (e, data) <?php echo --> <!--if (data.files.length > 10) <?php echo --> <!--return false;--> <!--;?>-->
+                                        <!--;?>,-->
+                                        <!--done: function (e, data) <?php echo --> <!--$.each(data.result.files, function (index, file) <?php echo --> <!--$(this).text(file.name).appendTo("upload-img-box_<?php echo ($field["name;?>");-->
+                                            <!--;?>);-->
+                                        <!--"]); ?>-->
+									<!--});-->
+								<!--</script>-->
 
 								<!--<div class="upload-box">-->
 								    <!--<p class="upload-tip">作品图片：最多可以上传5张图片，马上上传</p>-->
