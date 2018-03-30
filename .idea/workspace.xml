@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c648b38f-ed9c-4a54-8b19-db1dcbaeea34" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Addons/Links/View/Links/edit.html" afterPath="$PROJECT_DIR$/Addons/Links/View/Links/edit.html" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/ArticleController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/ArticleController.class.php" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/View/default/Article/lists_speakers.html" afterPath="$PROJECT_DIR$/Application/Home/View/default/Article/lists_speakers.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,11 +44,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index2.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Home/View/default/Index/index2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="221" column="128" lean-forward="false" selection-start-line="221" selection-start-column="128" selection-end-line="221" selection-end-column="128" />
+            <state relative-caret-position="456">
+              <caret line="92" column="84" lean-forward="false" selection-start-line="92" selection-start-column="67" selection-end-line="92" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lists_speakers.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/View/default/Article/lists_speakers.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="589">
+              <caret line="86" column="58" lean-forward="true" selection-start-line="86" selection-start-column="58" selection-end-line="86" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -67,8 +77,8 @@
       <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="39" column="62" lean-forward="false" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+            <state relative-caret-position="228">
+              <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -84,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArticleController.class.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ArticleController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ArticleController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1615">
-              <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+            <state relative-caret-position="171">
+              <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="37" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -110,12 +120,13 @@
       <list>
         <option value="$PROJECT_DIR$/Application/Admin/View/Article/edit.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Article/add.html" />
-        <option value="$PROJECT_DIR$/Application/Home/Controller/ArticleController.class.php" />
         <option value="$PROJECT_DIR$/Public/static/css/main.css" />
         <option value="$PROJECT_DIR$/Application/Home/View/default/Article/detail_case.html" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/View/default/Index/index2.html" />
         <option value="$PROJECT_DIR$/Addons/Links/View/Links/edit.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/default/Article/lists_speakers.html" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/ArticleController.class.php" />
       </list>
     </option>
   </component>
@@ -286,12 +297,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522379289471</updated>
-      <workItem from="1522379290806" duration="13439000" />
+      <workItem from="1522379290806" duration="15929000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13439000" />
+    <option name="totallyTimeSpent" value="15929000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -332,30 +343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="6" column="21265" lean-forward="false" selection-start-line="6" selection-start-column="21265" selection-end-line="6" selection-end-column="21265" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/default/Article/detail_case.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="55" column="54" lean-forward="false" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ArticleController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="39" column="62" lean-forward="false" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
           <folding />
         </state>
       </provider>
@@ -426,8 +413,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/View/default/Index/index2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="221" column="128" lean-forward="false" selection-start-line="221" selection-start-column="128" selection-end-line="221" selection-end-column="128" />
+        <state relative-caret-position="456">
+          <caret line="92" column="84" lean-forward="false" selection-start-line="92" selection-start-column="67" selection-end-line="92" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/default/Article/lists_speakers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="86" column="58" lean-forward="true" selection-start-line="86" selection-start-column="58" selection-end-line="86" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/default/Article/detail_case.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="55" column="54" lean-forward="false" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ArticleController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="37" selection-end-column="50" />
           <folding />
         </state>
       </provider>

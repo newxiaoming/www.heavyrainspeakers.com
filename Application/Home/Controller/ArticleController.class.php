@@ -36,6 +36,12 @@ class ArticleController extends HomeController {
 		/* 获取当前分类列表 */
 		$Document = D('Document');
 		$list = $Document->lists($category['id']);
+        $list    = D('Document')
+            ->field('title,cover_id,honor,honor_en,title_en,hr_document_speakers.id')
+            ->join('hr_document_speakers ON hr_document.id = hr_document_speakers.id')
+            ->order(array('level'=>'desc'))
+            ->where("category_id = ". $category['id']  ."  AND status = 1")
+            ->find();
 		if(false === $list){
 			$this->error('获取列表数据失败！');
 		}
